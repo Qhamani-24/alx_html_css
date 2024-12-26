@@ -1,26 +1,39 @@
-/* base.css - General Styling */
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
-    margin: 0;
-    padding: 0;
-  }
-  
-  h1, h2, h3, h4, h5, h6 {
-    color: #333;
-  }
-  
-  p {
-    color: #555;
-  }
-  
-  a {
-    text-decoration: none;
-    color: #0066cc;
-  }
-  
-  a:hover {
-    color: #004080;
-  }
+  display: flex; 
+  flex-direction: column; 
+  margin: 0;
+  height: 100vh; 
+
+header, footer {
+  background-color: #4CAF50;
+  color: white;
+  text-align: center;
+  padding: 1em;
+}
+
+main {
+  display: flex; 
+  flex-direction: row; 
+  flex: auto; 
+  overflow: hidden; 
+}
+
+article {
+  flex: 2; 
+  padding: 1em;
+  background-color: #f9f9f9;
+  overflow-y: auto; /
+}
+
+aside {
+  flex: 1; 
+  padding: 1em;
+  background-color: #ddd;
+  overflow-y: auto; 
+}
+
+header, footer {
+  font-size: 1.5em;
+}
   
