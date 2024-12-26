@@ -4,6 +4,11 @@ body {
   flex-direction: column; 
   margin: 0;
   height: 100vh; 
+  body {
+    background-color: #f0f0f0; /* Light background for the page */
+    font-family: Arial, sans-serif;
+}
+
 
 header, footer {
   background-color: #4CAF50;
@@ -23,7 +28,11 @@ article {
   flex: 2; 
   padding: 1em;
   background-color: #f9f9f9;
-  overflow-y: auto; /
+  overflow-y: auto; 
+  article {
+    border: 1px solid #ddd; /* Light border around the content */
+}
+
 }
 
 aside {
@@ -36,4 +45,19 @@ aside {
 header, footer {
   font-size: 1.5em;
 }
-  
+/* Styling the logo to make it look bigger */
+.logo {
+  font-size: 36px; /* You can adjust this size */
+  color: #333; /* Choose a color that fits your design */
+  padding-right: 10px; /* Adds space between logo and the rest of the links */
+}
+a {
+  color: #007BFF; /* Link color */
+  text-decoration: none; /* Removes underline */
+}
+
+a:hover {
+  color: #0056b3; /* Darker color on hover */
+  text-decoration: underline; /* Underline on hover */
+}
+
